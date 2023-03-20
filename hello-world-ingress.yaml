@@ -10,8 +10,8 @@ spec:
         paths:
           - backend:
               service:
-                name: demo
+                name: hello-world-svc
                 port:
                   number: 8080
-            path: /
+            path: /hello
             pathType: Prefix
