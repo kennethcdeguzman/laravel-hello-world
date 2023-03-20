@@ -3,10 +3,10 @@
 ___
 
 ## Dockerfile setup:
-- Base image: **php:8.1-fpm-alpine**
-- Composer version: **latest**
-- Host binding: **0.0.0.0**
-- Port Binding: **8080**
+- **Base image**: php:8.1-fpm-alpine
+- **Composer version**: latest
+- **Host binding**: 0.0.0.0
+- **Port Binding**: 8080
 
 ## Building and publishing image to Dockerhub:
 1. On the project directory, build and tag the image
@@ -28,5 +28,11 @@ $ docker push kennethcdeguzman/hello-world:latest
 ````
 
 ## References:
-- Dockerhub public repo: [kennethcdeguzman/hello-world](https://hub.docker.com/r/kennethcdeguzman/hello-world)
-- Docker Pull Command: **docker pull kennethcdeguzman/hello-world**
+- **Dockerhub public repo**: [kennethcdeguzman/hello-world](https://hub.docker.com/r/kennethcdeguzman/hello-world)
+- **Docker Pull Command**: 
+````
+$ docker pull kennethcdeguzman/hello-world
+````
+- **Laravel Quickstart**: https://laravel.com/docs/4.2/quick
+- **Laravel routing**: https://laravel.com/docs/5.3/routing#basic-routing
+- **Laravel Views**: https://laravel.com/docs/5.3/views
