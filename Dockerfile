@@ -14,8 +14,8 @@ RUN composer create-project laravel/laravel hello-world
 
 WORKDIR ./hello-world
 
-COPY ./routes/web.php ./routes
-COPY ./views/hello.blade.php ./resources/views
+COPY ./resources/routes/web.php ./routes
+COPY ./resources/views/hello.blade.php ./resources/views
 
 EXPOSE 80/tcp
 
