@@ -53,7 +53,18 @@ $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/co
     - paths.backend.service: hello-world-svc
     - port.number: 8080
     - path: /hello
-
+Run the following command to apply hello-world-ingress.yaml in the /manifest dir manifest to create the ingress resource
+````
+$ kubectl apply -f hello-world-ingress.yaml
+````
+3. Create a port forwarding session from a local port to the ingress controller
+````
+$ kubectl port-forward --namespace=ingress-nginx service/ingress-nginx-controller 8080:80
+````
+4. Test the connection
+````
+curl http://demo.localdev.me/hello
+````
 ## References:
 - **Dockerhub public repo**: [kennethcdeguzman/hello-world](https://hub.docker.com/r/kennethcdeguzman/hello-world)
 - **Docker Pull Command**: 
