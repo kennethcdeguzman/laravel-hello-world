@@ -1,5 +1,10 @@
 # Laravel hello world app
 
+## Getting the project
+1. Clone the public github project to your machine
+````
+$ git clone git@github.com:kennethcdeguzman/laravel-hello-world.git
+````
 ## Dockerfile setup:
 - **Base image**: php:8.1-fpm-alpine
 - **Composer version**: latest
