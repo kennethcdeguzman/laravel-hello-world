@@ -1,7 +1,5 @@
 # Laravel hello world app
 
-___
-
 ## Dockerfile setup:
 - **Base image**: php:8.1-fpm-alpine
 - **Composer version**: latest
