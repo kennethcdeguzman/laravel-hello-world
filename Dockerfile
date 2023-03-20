@@ -1,5 +1,6 @@
 FROM php:8.1-fpm-alpine
 
+#Update apk and install testing tools
 RUN apk update
 RUN apk add bash
 RUN apk add curl
